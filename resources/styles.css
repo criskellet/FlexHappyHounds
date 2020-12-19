@@ -1,0 +1,144 @@
+html {
+    font-size:14px;
+    min-width:300px;
+}
+
+body {
+    
+    font-family: "Times New Roman";
+    text-align:center;
+    background-image:url("../resources/images/dogs-background.jpg");
+    background-repeat:repeat;
+    color:white;
+    
+}
+@media only screen and (min-width:800px){
+    html {
+        font-size:20px;
+        min-width:600px;
+        
+    }
+}
+/* Heading styles */
+h1 {
+    padding:0;
+    margin:0;
+    font-size:2rem;
+    font-weight:bold;
+    width:100%;
+}
+
+h2 {
+    font-size:1.8rem;
+    font-weight-bold;
+    width:100%;
+}
+
+h3 {
+    font-size:1.2rem;
+    width:100%;
+}
+
+/* Header styles */
+header {
+    margin : 0 auto;
+
+}
+
+.header-container {
+    background-color: gray;
+    color: orange;
+    height:70px;
+    width:95%;
+    margin:auto;
+    border-bottom: 5px solid black;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    z-index:2;
+    padding:10px;
+    position:fixed;
+    opacity:0.8;
+}
+nav a {
+    text-decoration: underline;
+    color: white;
+}
+
+nav span {
+    display:inline-block;        /* Centers nav in header block */
+    padding:20px 10px;
+}
+
+/* Main styles */
+
+#main-container {
+    padding-top:80px;
+    display:grid;
+    width:95%;
+    margin:auto;
+    /* 3 rows and 2 columns */
+    grid-template: repeat(4, 1fr) / repeat(2, 1fr);
+    grid-gap: 5px;
+    grid-template-areas: "intro events"
+                         "testimonials events"
+                         "testimonials events"
+                         "contact contact";
+    padding-left:50px;
+    font-size:1rem;
+}
+#main-container .intro {
+    grid-area:intro;
+    
+}
+
+intro div {
+    justify-self:center; 
+    
+}
+
+#main-container .events {
+    grid-area:events;
+    
+}
+
+#main-container .testimonials {
+    grid-area:testimonials;
+    
+}
+
+#main-container .contact {
+    grid-area:contact;
+    
+}
+
+.event-card a {
+    color: white;
+    text-decoration:underline;
+    display:block;
+    font-size:1.2em;
+    padding-top:10px;
+    margin:0;
+    
+}
+
+.testimonial-card {
+    padding-bottom:20px;
+}
+
+.testimonial-para {
+    font-size:1.2em;
+    font-family: "Roboto Condensed";
+    display:inline;
+}
+
+.testimonial-name {
+    font-size:1.2em;
+    font-family: "Tangerine";
+    font-weight:bold;
+    padding-left:10px;
+    display:inline;
+}
+footer {
+    text-align:right;
+}
